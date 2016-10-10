@@ -10,7 +10,7 @@ button.onclick=function()
     //Capture the response & store it in a variable
     request.onreadystatechange=function()
     {
-        if(request.readyState===XMLHTTPRequest.DONE)
+        if(request.readyState===XMLHttpRequest.DONE)
         {//Take some action
         if(request.status===200)
         {
@@ -23,7 +23,7 @@ button.onclick=function()
         
     };
    //Make a request
-  request,open('GET','http://vaibhav-17596.imad.hasura-app.io/counter',true);
+  request.open('GET','http://vaibhav-17596.imad.hasura-app.io/counter',true);
   request.send(null);
     
     
